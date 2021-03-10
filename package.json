@@ -1,0 +1,65 @@
+{
+  "name": "picfolio",
+  "version": "1.0.0",
+  "description": "'# Picfolio'",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "mantest": "nodemon --exec \"mocha -R min\"",
+    "test": "mocha --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solidsnacks/Picfolio.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solidsnacks/Picfolio/issues"
+  },
+  "engines": {
+    "node": "14.15.4"
+  },
+  "homepage": "https://github.com/solidsnacks/Picfolio#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.7.3",
+    "multer": "^1.4.2",
+    "nodemon": "^1.19.3",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "redux-form": "^8.2.6",
+    "superagent": "^5.1.1",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^6.2.1"
+  }
+}

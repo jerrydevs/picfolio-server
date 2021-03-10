@@ -1,0 +1,21 @@
+{
+    "env": {
+        "node": true,
+        "browser": true,
+        "es6": true
+    },
+    "globals": {
+        "exampleGlobalVariable": true
+    },
+    "rules": {
+        "eqeqeq": 1
+    },
+    "plugins": [
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": true,
+        "ecmaVersion": 2017
+     }
+  }
